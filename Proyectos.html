@@ -1,42 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michelle Ibarra's Home page</title>
-    <link rel="stylesheet" href="NotHomePage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Servicios - PREVENSA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
 </head>
+
 <body>
-<!--This is the navigation bar-->
 <nav>
-  <ul>
-    <li><a href="Inicio.html">Inicio</a></li>
-    <li><a href="Proyectos.html">Servicios</a></li>
-    <li><a href="Contacto.html">Contacto</a></li>
-      <li class="nav-linkedin">
-          <a
-                  href="https://www.linkedin.com/in/michelle-ibarra-benavides-a7a167181/"
-                  class="linkedin-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-          >
-              <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-      </li>
-  </ul>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="Inicio.html">
+                <img src="Pictures/logo.png" alt="Prevensa Logo" class="nav-logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Proyectos.html" class="active">Servicios</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+        <div class="nav-social">
+            <a
+                href="https://www.linkedin.com/in/michelle-ibarra-benavides-a7a167181/"
+                class="linkedin-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
 </nav>
-<!--This is the first header-->
-<h1>Servicios</h1>
-<!--This is the paragraph-->
-<p> Aquí van los servicios que ofrece la empresa</p>
 
-<footer>
-    <p>© 2025 Michelle Ibarra. Todos los derechos reservados. <br>Diseñado por Ramiro Bugueño</p>
+<header class="page-header">
+    <div class="container">
+        <h1 class="page-title">Nuestros Servicios</h1>
+        <p class="page-subtitle">Soluciones integrales en prevención de riesgos laborales</p>
+    </div>
+</header>
+
+<main class="content">
+    <section class="section">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-detail-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Evaluación de Riesgos</h2>
+                    <p>
+                        Realizamos identificación y análisis exhaustivo de peligros en todos los 
+                        procesos productivos de tu empresa. Nuestras evaluaciones incluyen:
+                    </p>
+                    <ul class="service-list">
+                        <li>Matriz de riesgos por puesto de trabajo</li>
+                        <li>Evaluación de agentes físicos, químicos y biológicos</li>
+                        <li>Análisis ergonómico y psicosocial</li>
+                        <li>Planes de acción y medidas de control</li>
+                        <li>Seguimiento y reevaluación periódica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-detail-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Capacitación y Formación</h2>
+                    <p>
+                        Programas de capacitación diseñados específicamente para las necesidades 
+                        de tu empresa y equipo de trabajo:
+                    </p>
+                    <ul class="service-list">
+                        <li>Inducción en prevención de riesgos para trabajadores nuevos</li>
+                        <li>Charlas operacionales y de seguridad específicas por área</li>
+                        <li>Capacitación en uso de equipos de protección personal</li>
+                        <li>Talleres de cultura preventiva y liderazgo en seguridad</li>
+                        <li>Formación en primeros auxilios y respuesta a emergencias</li>
+                        <li>Capacitación en normativa vigente (DS 594, Ley 16.744, etc.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-detail-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Gestión Documental</h2>
+                    <p>
+                        Elaboración, implementación y mantención de toda la documentación 
+                        necesaria para el cumplimiento legal:
+                    </p>
+                    <ul class="service-list">
+                        <li>Reglamento Interno de Orden, Higiene y Seguridad (RIOHS)</li>
+                        <li>Protocolos de seguridad y procedimientos de trabajo seguro</li>
+                        <li>Programas de gestión (planificación anual preventiva)</li>
+                        <li>Registros de capacitación y asistencia</li>
+                        <li>Planes de emergencia y evacuación</li>
+                        <li>Gestión de permisos y autorizaciones ante organismos fiscalizadores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-detail-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Asesoría en Terreno</h2>
+                    <p>
+                        Acompañamiento presencial continuo en tus faenas con supervisión 
+                        técnica profesional:
+                    </p>
+                    <ul class="service-list">
+                        <li>Supervisión de condiciones de seguridad en obra</li>
+                        <li>Observaciones preventivas y retroalimentación inmediata</li>
+                        <li>Inspecciones de equipos, herramientas y EPP</li>
+                        <li>Apoyo en implementación de medidas correctivas</li>
+                        <li>Coordinación con mandantes y subcontratistas</li>
+                        <li>Informes técnicos y reportes de gestión</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-detail-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Carpetas de Arranque</h2>
+                    <p>
+                        Preparación completa de la documentación técnica y administrativa 
+                        requerida para el inicio de operaciones:
+                    </p>
+                    <ul class="service-list">
+                        <li>Análisis de requisitos legales aplicables al proyecto</li>
+                        <li>Elaboración de documentación base (RIOHS, protocolos, procedimientos)</li>
+                        <li>Programa de capacitación inicial para trabajadores</li>
+                        <li>Plan de gestión de residuos y gestión ambiental básica</li>
+                        <li>Coordinación con organismos administradores (mutualidades)</li>
+                        <li>Revisión y aprobación de documentación por parte del mandante</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-detail-icon">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Cultura de Seguridad</h2>
+                    <p>
+                        Desarrollo e implementación de programas integrales para fortalecer 
+                        la cultura preventiva organizacional:
+                    </p>
+                    <ul class="service-list">
+                        <li>Diagnóstico de cultura de seguridad actual</li>
+                        <li>Diseño de programas de reconocimiento y buenas prácticas</li>
+                        <li>Implementación de comités paritarios efectivos</li>
+                        <li>Campañas comunicacionales y material educativo</li>
+                        <li>Programa de liderazgo visible en seguridad</li>
+                        <li>Indicadores de gestión y mejora continua</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">¿Necesitas un Servicio Personalizado?</h2>
+                <p class="cta-text">
+                    Cada empresa es única. Contáctanos para diseñar una solución 
+                    adaptada a tus necesidades específicas.
+                </p>
+                <a href="Contacto.html" class="btn btn-secondary">Conversemos</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Michelle Ibarra - PREVENSA. Todos los derechos reservados.</p>
+            <p class="footer-credit">Diseñado por Ramiro Bugueño</p>
+        </div>
+    </div>
 </footer>
-</body>
 
+<script>
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.section').forEach(section => {
+        observer.observe(section);
+    });
+</script>
+</body>
 </html>

@@ -1,50 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michelle Ibarra's Home page</title>
-    <link rel="stylesheet" href="NotHomePage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Contacto - PREVENSA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
 </head>
+
 <body>
 <nav>
-    <ul>
-        <li><a href="Inicio.html">Inicio</a></li>
-        <li><a href="Proyectos.html">Servicios</a></li>
-        <li><a href="Contacto.html">Contacto</a></li>
-        <li class="nav-linkedin">
-            <a
-                    href="https://www.linkedin.com/in/michelle-ibarra-benavides-a7a167181/"
-                    class="linkedin-icon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-            >
-                <i class="fab fa-linkedin"></i> LinkedIn
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="Inicio.html">
+                <img src="Pictures/logo.png" alt="Prevensa Logo" class="nav-logo-img">
             </a>
-        </li>
-    </ul>
-</nav>
-<!--This is the first header-->
-<h1>¿Tienes dudas on necesitas asesoría?</h1>
-<!--This is the paragraph-->
-<section class="section">
-    <div class="container">
-        <form class="contact-form">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
-            <button type="submit" class="btn">Enviar mensaje</button>
-        </form>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Proyectos.html">Servicios</a></li>
+            <li><a href="Contacto.html" class="active">Contacto</a></li>
+        </ul>
+        <div class="nav-social">
+            <a
+                href="https://www.linkedin.com/in/michelle-ibarra-benavides-a7a167181/"
+                class="linkedin-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
     </div>
-</section>
+</nav>
 
-<footer>
-    <p>© 2025 Michelle Ibarra. Todos los derechos reservados. <br>Diseñado por Ramiro Bugueño</p>
+<header class="page-header">
+    <div class="container">
+        <h1 class="page-title">Conversemos</h1>
+        <p class="page-subtitle">¿Tienes dudas o necesitas asesoría? Estamos para ayudarte</p>
+    </div>
+</header>
+
+<main class="content">
+    <section class="section section-contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>contacto@prevensa.cl</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+56 9 XXXX XXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Región Metropolitana, Chile</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                            <p class="text-small">Sábados con cita previa</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/michelle-ibarra-benavides-a7a167181/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input 
+                                type="text" 
+                                id="nombre" 
+                                name="nombre" 
+                                placeholder="Tu nombre" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="tu@email.com" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono" 
+                                placeholder="+56 9 1234 5678"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input 
+                                type="text" 
+                                id="empresa" 
+                                name="empresa" 
+                                placeholder="Nombre de tu empresa"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="evaluacion">Evaluación de Riesgos</option>
+                                <option value="capacitacion">Capacitación</option>
+                                <option value="documentacion">Gestión Documental</option>
+                                <option value="asesoria">Asesoría en Terreno</option>
+                                <option value="carpetas">Carpetas de Arranque</option>
+                                <option value="cultura">Cultura de Seguridad</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea 
+                                id="mensaje" 
+                                name="mensaje" 
+                                rows="6" 
+                                placeholder="Cuéntanos sobre tu proyecto o consulta..." 
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-form">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-map">
+        <div class="container">
+            <h2 class="section-title">¿Por qué Elegirnos?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Experiencia Comprobada</h3>
+                    <p>Años de trayectoria en el rubro de la prevención de riesgos</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Atención Personalizada</h3>
+                    <p>Soluciones adaptadas a las necesidades específicas de tu empresa</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Presencia en Terreno</h3>
+                    <p>Acompañamiento continuo y supervisión profesional</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Cumplimiento Normativo</h3>
+                    <p>Garantizamos conformidad con toda la legislación vigente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Michelle Ibarra - PREVENSA. Todos los derechos reservados.</p>
+            <p class="footer-credit">Diseñado por Ramiro Bugueño</p>
+        </div>
+    </div>
 </footer>
-</body>
 
+<script>
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        // Show loading state
+        formMessage.className = 'form-message';
+        formMessage.textContent = 'Enviando mensaje...';
+        formMessage.style.display = 'block';
+        
+        // Simulate sending (in production, this would send to a server)
+        setTimeout(() => {
+            formMessage.className = 'form-message success';
+            formMessage.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                ¡Mensaje enviado exitosamente! Te contactaremos pronto.
+            `;
+            form.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }, 1500);
+    });
+
+    // Scroll reveal
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.section').forEach(section => {
+        observer.observe(section);
+    });
+</script>
+</body>
 </html>
