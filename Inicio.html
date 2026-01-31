@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Ibarra's Home page</title>
+    <link rel="stylesheet" href="Miche.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+
+<body>
+<header>
+<nav>
+    <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Proyectos.html">Servicios</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li class="nav-linkedin">
+            <a
+                    href="https://www.linkedin.com/in/michelle-ibarra-benavides-a7a167181/"
+                    class="linkedin-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+            >
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+<div class="banner">
+    <img src="Pictures/logo.png" alt="Prevensa Logo" class="logo" style="width: 200px; height: auto;">
+</div>
+
+<div class="hero">
+    <blockquote>"No solo cumplimos, resolvemos"</blockquote>
+    <h1>Gestión estratégica en prevención de riesgos laborales</h1>
+    <a href="Contacto.html" class="btn primary">Contáctanos</a>
+</div>
+    <svg class="divider" viewBox="0 0 1440 100">
+        <path fill="var(--blanco)" d="M0,100 C720,0 720,0 1440,100 L1440,0 L0,0 Z"/>
+    </svg>
+</header>
+<div class="content">
+
+    <div class="section">
+        <h4>Descripción</h4>
+        <div class="section">
+            <p class="descripcion-text">PREVENSA es una empresa especializada en ingeniería en prevención de riesgos, comprometida con brindar soluciones integrales para un inicio de operaciones seguro y conforme a normativa. Nuestro servicio abarca desde la elaboración de carpetas de arranque y documentación técnica, hasta asesorías personalizadas en terreno, asegurando una gestión preventiva eficiente, profesional y con presencia constante.
+
+                Con un enfoque técnico, humano y actualizado, acompañamos a nuestros clientes en cada etapa del proceso, fortaleciendo la cultura de seguridad y cumpliendo con los más altos estándares del rubro.
+
+                PREVENSA: Seguridad planificada, ejecución respaldada.</p>
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="container">
+            <h3>¿Cómo puedo ayudarte?</h3>
+            <div class="cards">
+                <div class="card">
+                    <i class="icon icon-risk"></i>
+                    <h3>Evaluación de riesgos</h3>
+                    <p>Identificación de peligros en entornos laborales.</p>
+                </div>
+                <div class="card">
+                    <i class="icon icon-training"></i>
+                    <h3>Capacitación</h3>
+                    <p>Charlas y talleres de seguridad personalizados.</p>
+                </div>
+                <div class="card">
+                    <i class="icon icon-documentation"></i>
+                    <h3>Gestión documental</h3>
+                    <p>Protocolos, normativas y cumplimiento legal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Michelle Ibarra. Todos los derechos reservados. <br>Diseñado por Ramiro Bugueño</p>
+</footer>
+<script>
+    const obs = new IntersectionObserver((ents) => {
+        ents.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                obs.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.section').forEach(s => obs.observe(s));
+</script>
+
+</body>
+</html>

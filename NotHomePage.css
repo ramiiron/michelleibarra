@@ -1,0 +1,191 @@
+/* — Reset & Variables — */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colores */
+    --azul-profesional:    #2C3E50;  /* Navbar, títulos, footer */
+    --naranja-energetico:  #E67E22;  /* CTA, iconos, subrayados */
+    --verde-confianza:     #27AE60;  /* Indicadores OK */
+    --gris-claro:          #F4F6F7;  /* Fondos de secciones */
+    --negro-suave:         #1C1C1C;  /* Texto general */
+    --blanco:              #FFFFFF;  /* Fondo principal */
+
+    /* Tipografía y espaciado */
+    --font-sans:           'Lato', sans-serif;
+    --space:               1rem;
+    --transition:          0.25s ease;
+}
+
+/* — Global — */
+body {
+    font-family: var(--font-sans);
+    color: var(--negro-suave);
+    line-height: 1.6;
+    background: var(--blanco);
+}
+
+/* — Contenedor central — */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space);
+}
+
+/* — Navbar — */
+nav {
+    background: #2C3E50;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: var(--space) 0;
+    align-items: center;
+    position: relative;
+}
+nav ul .nav-linkedin {
+    position: absolute;
+    right: var(--space);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.linkedin-icon {
+    font-size: 1.5 rem;
+    color: var(--blanco);
+    font-family: 'Helvetica Neue', Helvetic, Arial, sans-serif;
+    text-decoration: none;
+    transition: none !important;
+}
+.linkedin-icon:hover {
+    color: var(--blanco) !important;
+}
+nav li {
+    margin: 0 var(--space);
+}
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition);
+    position: relative;
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0; bottom: -4px;
+    background: var(--naranja-energetico);
+    transition: width var(--transition);
+}
+nav a:hover::after{
+    width:100%;
+}
+nav a.active,
+nav a:hover{
+    color: var(--naranja-energetico)
+}
+
+/* — Encabezados secundarios — */
+h1 {
+    font-size: 1.5em;
+    color: var(--azul-profesional);
+    text-align: center;
+    margin-top: 0.5em;
+}
+h2 {
+    font-size: 1.2em;
+    color: var(--azul-profesional);
+    text-align: center;
+    margin-top: 0.5em;
+}
+p {
+    font-size: 1em;
+    color: var(--negro-suave);
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+/* — Botones genéricos — */
+.btn {
+    display: inline-block;
+    background: var(--naranja-energetico);
+    color: var(--blanco);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background var(--transition);
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn:hover,
+.btn:focus {
+    background: var(--azul-profesional);
+}
+
+/* — Secciones — */
+.section {
+    background: var(--gris-claro);
+    padding: 3rem 1rem;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: var(--blanco);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: var(--negro-suave);
+    font-family: var(--font-sans);
+    transition: border-color var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--azul-profesional);
+    outline: none;
+}
+
+.contact-form button {
+    align-self: flex-end;
+}
+/* — Footer — */
+footer {
+    background: var(--azul-profesional) !important;
+    color: var(--blanco) !important;
+    text-align: center;
+    padding: var(--space) 0;
+    /* full-bleed: si está dentro de .container úsalo para que ocupe todo el ancho */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+}
+footer p,
+footer a {
+    color: var(--blanco) !important;
+}
+footer a:hover {
+    color: var(--naranja-energetico) !important;
+}
