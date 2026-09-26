@@ -85,7 +85,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 70px;
+    min-height: 96px;
 }
 
 .nav-logo {
@@ -93,7 +93,7 @@ nav {
 }
 
 .nav-logo-img {
-    height: 65px;
+    height: 80px;
     width: auto;
     display: block;
 }
@@ -183,10 +183,11 @@ nav {
 
 .hero-quote {
     font-family: var(--font-accent);
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-style: italic;
     color: var(--color-secondary);
-    margin-bottom: var(--space-sm);
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-md);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.2s ease-out;
 }
