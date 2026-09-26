@@ -232,6 +232,10 @@ nav {
     margin-bottom: var(--space-xs);
 }
 
+.eyebrow-center {
+    text-align: center;
+}
+
 /* — Nav CTA button — */
 .btn-nav {
     display: inline-block;
