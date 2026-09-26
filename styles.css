@@ -160,7 +160,7 @@ nav {
     justify-content: center;
     background: 
         linear-gradient(135deg, rgba(27, 58, 75, 0.85), rgba(27, 58, 75, 0.6)),
-        url('Pictures/hero-bg.png') center/cover no-repeat;
+        url('Pictures/hero-bg.jpg') center/cover no-repeat;
     background-attachment: fixed;
     overflow: hidden;
 }
